@@ -58,6 +58,14 @@ const game = () => {
         text.innerHTML = "It's a Win ! ";
         text.style.color = 'white';
       }
+      if (playerScore >= 6) {
+          alert("YOU WIN LET START AGAIN")
+          window.location.reload();
+        }
+        if (computerScore >= 6) {
+          alert("YOU LOSE LET START AGAIN")
+          window.location.reload();
+        }
     });
   });
 }
